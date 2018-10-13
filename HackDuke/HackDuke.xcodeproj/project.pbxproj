@@ -12,6 +12,7 @@
 		4BF4D29621728E3A00AE4F00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4D29421728E3A00AE4F00 /* Main.storyboard */; };
 		4BF4D29821728E4200AE4F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4D29721728E4200AE4F00 /* Assets.xcassets */; };
 		4BF4D29B21728E4200AE4F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4D29921728E4200AE4F00 /* LaunchScreen.storyboard */; };
+		56D8C765C1904B920C552A75 /* Pods_HackDuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE6C6DDAE7FA55F7EEEC7D0 /* Pods_HackDuke.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		4BF4D29721728E4200AE4F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BF4D29A21728E4200AE4F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BF4D29C21728E4200AE4F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		509D6232D4D7690ABFE2F0F5 /* Pods-HackDuke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackDuke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackDuke/Pods-HackDuke.debug.xcconfig"; sourceTree = "<group>"; };
+		87E145B82303CA7F7EA97B9B /* Pods-HackDuke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackDuke.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackDuke/Pods-HackDuke.release.xcconfig"; sourceTree = "<group>"; };
+		9EE6C6DDAE7FA55F7EEEC7D0 /* Pods_HackDuke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackDuke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D8C765C1904B920C552A75 /* Pods_HackDuke.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				4BF4D28F21728E3A00AE4F00 /* HackDuke */,
 				4BF4D28E21728E3A00AE4F00 /* Products */,
+				B6931FB23E85953AE3226EAF /* Pods */,
+				D363826EF68F460759F87BEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = HackDuke;
 			sourceTree = "<group>";
 		};
+		B6931FB23E85953AE3226EAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				509D6232D4D7690ABFE2F0F5 /* Pods-HackDuke.debug.xcconfig */,
+				87E145B82303CA7F7EA97B9B /* Pods-HackDuke.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D363826EF68F460759F87BEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EE6C6DDAE7FA55F7EEEC7D0 /* Pods_HackDuke.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BF4D29F21728E4200AE4F00 /* Build configuration list for PBXNativeTarget "HackDuke" */;
 			buildPhases = (
+				AD0421D7C886FC5040F1E14C /* [CP] Check Pods Manifest.lock */,
 				4BF4D28921728E3A00AE4F00 /* Sources */,
 				4BF4D28A21728E3A00AE4F00 /* Frameworks */,
 				4BF4D28B21728E3A00AE4F00 /* Resources */,
+				C8F36BF308B0688EAD62B972 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD0421D7C886FC5040F1E14C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackDuke-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8F36BF308B0688EAD62B972 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HackDuke/Pods-HackDuke-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackDuke/Pods-HackDuke-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4BF4D28921728E3A00AE4F00 /* Sources */ = {
@@ -280,9 +353,11 @@
 		};
 		4BF4D2A021728E4200AE4F00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 509D6232D4D7690ABFE2F0F5 /* Pods-HackDuke.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2PZEH4H6R;
 				INFOPLIST_FILE = HackDuke/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +372,11 @@
 		};
 		4BF4D2A121728E4200AE4F00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87E145B82303CA7F7EA97B9B /* Pods-HackDuke.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2PZEH4H6R;
 				INFOPLIST_FILE = HackDuke/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
