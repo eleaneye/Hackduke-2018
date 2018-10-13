@@ -10,22 +10,31 @@ import UIKit
 import Alamofire
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var userName: UITextField!
-    @IBAction func getUserName(_ sender: Any) {
-        var myUserName: String = userName.text ?? ""
-    }
     
-    @IBOutlet weak var myButton: UIButton!
-    @IBAction func onPress(_ sender: Any) {
-        myButton.tintColor=UIColor.black;
+    var ref: DatabaseReference = Database.database().reference()
+    
+    let ap = ref.initializeApp(config)
+    let db = ap.database()
+    var users = db.ref("Users")
+    @IBOutlet weak var phoneNumber: UITextField!
+
+    @IBOutlet weak var password: UITextField!
+    
+    @IBOutlet weak var logButton: UIButton!
+    
+    @IBAction func logIn(_ sender: Any) {
+        let myPhoneNumber = phoneNumber.text
+        let myPassword = password.text
+        
+        logButton.tintColor=UIColor.black;
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+       
     }
-
 
 }
 
