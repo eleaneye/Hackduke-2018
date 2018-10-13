@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B63DF522172A89800E1A7AB /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4BF4D28D21728E3A00AE4F00 /* HackDuke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackDuke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF4D29021728E3A00AE4F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BF4D29221728E3A00AE4F00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		4BF4D28F21728E3A00AE4F00 /* HackDuke */ = {
 			isa = PBXGroup;
 			children = (
+				4B63DF522172A89800E1A7AB /* MyPlayground.playground */,
 				4BF4D29021728E3A00AE4F00 /* AppDelegate.swift */,
 				4BF4D29221728E3A00AE4F00 /* ViewController.swift */,
 				4BF4D29421728E3A00AE4F00 /* Main.storyboard */,

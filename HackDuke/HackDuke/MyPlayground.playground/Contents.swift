@@ -16,12 +16,12 @@ var receipents = ["3039 E Cornwallis Rd, Research Triangle Park, NC 27709",
 for receipent in receipents {
     print(receipent)
     
-    Alamofire.request(.GET, "https://maps.googleapis.com/maps/api/distancematrix/json",
-                      parameters: ["units": "imperial"])
-        .response { request, response, data, error in
-            print(request)
-            print(response)
-            print(error)
+    Alamofire.request("https://maps.googleapis.com/maps/api/distancematrix/json", parameters: ["foo": "bar"])
+        .responseJSON { response in
+            if let json = response.result.value {
+                print("JSON: \(json)") // serialized json response
+            }
     }
+    
 }
 
