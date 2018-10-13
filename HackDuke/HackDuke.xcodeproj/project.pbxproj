@@ -13,6 +13,7 @@
 		4BF4D29821728E4200AE4F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4D29721728E4200AE4F00 /* Assets.xcassets */; };
 		4BF4D29B21728E4200AE4F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4D29921728E4200AE4F00 /* LaunchScreen.storyboard */; };
 		56D8C765C1904B920C552A75 /* Pods_HackDuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE6C6DDAE7FA55F7EEEC7D0 /* Pods_HackDuke.framework */; };
+		D1B354262172A942003E3130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1B354252172A942003E3130 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		509D6232D4D7690ABFE2F0F5 /* Pods-HackDuke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackDuke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackDuke/Pods-HackDuke.debug.xcconfig"; sourceTree = "<group>"; };
 		87E145B82303CA7F7EA97B9B /* Pods-HackDuke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackDuke.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackDuke/Pods-HackDuke.release.xcconfig"; sourceTree = "<group>"; };
 		9EE6C6DDAE7FA55F7EEEC7D0 /* Pods_HackDuke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackDuke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1B354252172A942003E3130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				4BF4D29721728E4200AE4F00 /* Assets.xcassets */,
 				4BF4D29921728E4200AE4F00 /* LaunchScreen.storyboard */,
 				4BF4D29C21728E4200AE4F00 /* Info.plist */,
+				D1B354252172A942003E3130 /* GoogleService-Info.plist */,
 			);
 			path = HackDuke;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF4D29B21728E4200AE4F00 /* LaunchScreen.storyboard in Resources */,
+				D1B354262172A942003E3130 /* GoogleService-Info.plist in Resources */,
 				4BF4D29821728E4200AE4F00 /* Assets.xcassets in Resources */,
 				4BF4D29621728E3A00AE4F00 /* Main.storyboard in Resources */,
 			);
@@ -189,12 +193,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HackDuke/Pods-HackDuke-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
