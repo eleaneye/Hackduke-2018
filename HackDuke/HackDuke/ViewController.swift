@@ -10,6 +10,16 @@ import UIKit
 import Alamofire
 
 class ViewController: UIViewController {
+
+    @IBOutlet weak var userName: UITextField!
+    @IBAction func getUserName(_ sender: Any) {
+        var myUserName: String = userName.text ?? ""
+    }
+    
+    @IBOutlet weak var myButton: UIButton!
+    @IBAction func onPress(_ sender: Any) {
+        myButton.tintColor=UIColor.black;
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
