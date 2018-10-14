@@ -29,16 +29,13 @@ class RegisterDonator: FormViewController {
                 row.placeholder = "Enter text here"
         }
         
-        ButtonRow() {
-        performSegue(withIdentifier: "donorSurvey", sender: nil)
+        form +++ ButtonRow() {row in
+        
+            row.title = "Submit"}.onCellSelection({_,_ in self.performSegue(withIdentifier: "donorSurvey", sender: nil)})
         }
     }
-}
 
 class DonorSurvey: FormViewController {
-    
-    @IBOutlet weak var dummyText: UITextView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
