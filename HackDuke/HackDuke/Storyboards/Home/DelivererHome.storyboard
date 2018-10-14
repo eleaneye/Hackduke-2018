@@ -329,6 +329,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="960-Um-oqm"/>
         <segue reference="cDL-pm-Yae"/>
     </inferredMetricsTieBreakers>
 </document>

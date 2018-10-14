@@ -34,7 +34,7 @@
                                     <action selector="register:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0rD-oS-orv"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Not a user yet? " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Ek-jD-PIi">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Not a user yet? " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ek-jD-PIi">
                                 <rect key="frame" x="88" y="496" width="200" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="61.600000000000001" y="26.53673163418291"/>
         </scene>
-        <!--Home-->
+        <!--DelivererHome-->
         <scene sceneID="wQL-5w-un4">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="Home" id="tG6-Ah-tno" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="DelivererHome" referencedIdentifier="DelivererHome" id="tG6-Ah-tno" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gCB-Mh-qba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="734" y="-107"/>
