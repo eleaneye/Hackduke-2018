@@ -11,8 +11,8 @@
 		4B9CFC372172E1B500C1673C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9CFC362172E1B500C1673C /* Home.storyboard */; };
 		4B9CFC3E2172F15F00C1673C /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CFC3D2172E7A200C1673C /* Register.swift */; };
 		4B9CFC402172F25200C1673C /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9CFC3F2172F25200C1673C /* Register.storyboard */; };
-		4B9CFC43217300BE00C1673C /* RegisterDeliver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9CFC42217300BE00C1673C /* RegisterDeliver.storyboard */; };
-		4B9CFC45217300EF00C1673C /* RegisterDeliver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CFC44217300EF00C1673C /* RegisterDeliver.swift */; };
+		4B9CFC43217300BE00C1673C /* RegisterDeliverer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9CFC42217300BE00C1673C /* RegisterDeliverer.storyboard */; };
+		4B9CFC45217300EF00C1673C /* RegisterDeliverer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CFC44217300EF00C1673C /* RegisterDeliverer.swift */; };
 		4B9CFC4B2173026C00C1673C /* RegisterReceiver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9CFC4A2173026C00C1673C /* RegisterReceiver.storyboard */; };
 		4B9CFC4D217302AF00C1673C /* RegisterDonator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9CFC4C217302AF00C1673C /* RegisterDonator.storyboard */; };
 		4B9CFC4F2173037A00C1673C /* RegisterReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CFC4E2173037A00C1673C /* RegisterReceiver.swift */; };
@@ -33,8 +33,8 @@
 		4B9CFC362172E1B500C1673C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		4B9CFC3D2172E7A200C1673C /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		4B9CFC3F2172F25200C1673C /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
-		4B9CFC42217300BE00C1673C /* RegisterDeliver.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterDeliver.storyboard; sourceTree = "<group>"; };
-		4B9CFC44217300EF00C1673C /* RegisterDeliver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDeliver.swift; sourceTree = "<group>"; };
+		4B9CFC42217300BE00C1673C /* RegisterDeliverer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterDeliverer.storyboard; sourceTree = "<group>"; };
+		4B9CFC44217300EF00C1673C /* RegisterDeliverer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDeliverer.swift; sourceTree = "<group>"; };
 		4B9CFC4A2173026C00C1673C /* RegisterReceiver.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterReceiver.storyboard; sourceTree = "<group>"; };
 		4B9CFC4C217302AF00C1673C /* RegisterDonator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterDonator.storyboard; sourceTree = "<group>"; };
 		4B9CFC4E2173037A00C1673C /* RegisterReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterReceiver.swift; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 			children = (
 				4BF4D29221728E3A00AE4F00 /* LogIn.swift */,
 				4B9CFC3D2172E7A200C1673C /* Register.swift */,
-				4B9CFC44217300EF00C1673C /* RegisterDeliver.swift */,
+				4B9CFC44217300EF00C1673C /* RegisterDeliverer.swift */,
 				4B9CFC4E2173037A00C1673C /* RegisterReceiver.swift */,
 				4B9CFC502173038A00C1673C /* RegisterDonator.swift */,
 				D1B354312172F769003E3130 /* Choice.swift */,
@@ -93,7 +93,7 @@
 		4B9CFC41217300A900C1673C /* Registration */ = {
 			isa = PBXGroup;
 			children = (
-				4B9CFC42217300BE00C1673C /* RegisterDeliver.storyboard */,
+				4B9CFC42217300BE00C1673C /* RegisterDeliverer.storyboard */,
 				4B9CFC4A2173026C00C1673C /* RegisterReceiver.storyboard */,
 				4B9CFC4C217302AF00C1673C /* RegisterDonator.storyboard */,
 			);
@@ -211,7 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF4D29B21728E4200AE4F00 /* LaunchScreen.storyboard in Resources */,
-				4B9CFC43217300BE00C1673C /* RegisterDeliver.storyboard in Resources */,
+				4B9CFC43217300BE00C1673C /* RegisterDeliverer.storyboard in Resources */,
 				D1B3542E2172CEEE003E3130 /* GoogleService-Info.plist in Resources */,
 				4BF4D29821728E4200AE4F00 /* Assets.xcassets in Resources */,
 				4B9CFC4B2173026C00C1673C /* RegisterReceiver.storyboard in Resources */,
@@ -284,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B9CFC45217300EF00C1673C /* RegisterDeliver.swift in Sources */,
+				4B9CFC45217300EF00C1673C /* RegisterDeliverer.swift in Sources */,
 				4B9CFC3E2172F15F00C1673C /* Register.swift in Sources */,
 				D1B354322172F769003E3130 /* Choice.swift in Sources */,
 				4B9CFC322172E10400C1673C /* AppStoryboard.swift in Sources */,

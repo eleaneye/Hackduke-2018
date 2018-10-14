@@ -30,6 +30,8 @@ class Register: UIViewController {
         let myPassword = password.text
         
         self.ref.child(user!).child(myPhoneNumber!).setValue(["password": myPassword!])
+        
+  
         performSegue(withIdentifier: user!, sender: nil)
     }
 
