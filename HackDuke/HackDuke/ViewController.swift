@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         let myPassword = password.text
         
         self.ref.child("Deliverers").setValue(["phoneNum": myPhoneNumber, "password": myPassword])
+        performSegue(withIdentifier: "enterHome", sender: nil)
     }
     
     override func viewDidLoad() {

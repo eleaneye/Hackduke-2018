@@ -50,7 +50,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6D-cM-MSZ">
-                                <rect key="frame" x="219" y="463" width="42" height="30"/>
+                                <rect key="frame" x="166" y="481" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
@@ -65,11 +65,27 @@
                         <outlet property="logButton" destination="c6D-cM-MSZ" id="o4t-Qv-xav"/>
                         <outlet property="password" destination="wah-E9-bLk" id="031-wH-vDX"/>
                         <outlet property="phoneNumber" destination="VNZ-LX-1yu" id="ies-bo-nKA"/>
+                        <segue destination="T4l-WX-mg4" kind="show" identifier="enterHome" id="FX2-Bd-QVN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="61.600000000000001" y="26.53673163418291"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BCs-ig-1ev">
+            <objects>
+                <viewController id="T4l-WX-mg4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rh9-0I-IgG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9e7-XE-roh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ol-TP-XYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="27"/>
         </scene>
     </scenes>
     <resources>
