@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chiplogo" translatesAutoresizingMaskIntoConstraints="NO" id="spp-rC-8vL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chipIcon" translatesAutoresizingMaskIntoConstraints="NO" id="spp-rC-8vL">
                                 <rect key="frame" x="2" y="162" width="379" height="225"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -32,6 +32,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chiplogo" width="750" height="1334"/>
+        <image name="chipIcon" width="750" height="1334"/>
     </resources>
 </document>
