@@ -8,14 +8,12 @@
 
 import UIKit
 import Alamofire
+import FirebaseDatabase
 
 class ViewController: UIViewController {
     
-    var ref: DatabaseReference = Database.database().reference()
-    
-    let ap = ref.initializeApp(config)
-    let db = ap.database()
-    var users = db.ref("Users")
+    var ref: DatabaseReference! = Database.database().reference()
+
     @IBOutlet weak var phoneNumber: UITextField!
 
     @IBOutlet weak var password: UITextField!
@@ -26,13 +24,13 @@ class ViewController: UIViewController {
         let myPhoneNumber = phoneNumber.text
         let myPassword = password.text
         
-        logButton.tintColor=UIColor.black;
+        self.ref.child("Donators").setValue(["phone_num": myPhoneNumber], ["password": myPassword])
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
        
     }
 
