@@ -24,12 +24,12 @@ class Delivery: UIViewController, GMSPlacePickerViewControllerDelegate {
     
     var homeAddress = "102 Wannamaker Drive Durham,NC"
     
-    var storeAddresses = ["Whole Foods": "",
-                          "Harris Teeter": "",
-                          "Food Lion": "",
-                          "Panera": "",
-                          "Limings": "",
-                          "Hmart": ""
+    var storeAddresses = ["Whole Foods": "621 Broad St, Durham, NC 27705",
+                          "Harris Teeter": "2107 Hillsborough Rd, Durham, NC 27705",
+                          "Food Lion": "2930 W Main St, Durham, NC 27705",
+                          "Panera": "737 9th St, Durham, NC 27705",
+                          "Limings": "3400 Westgate Dr, Durham, NC 27707",
+                          "Hmart": "1961 High House Rd, Cary, NC 27519"
     ]
     
     var address:String?
