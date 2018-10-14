@@ -16,6 +16,8 @@ import FirebaseDatabase
 
 class Register: UIViewController {
     
+    var user: String?
+
     var ref: DatabaseReference!
     
     @IBOutlet weak var register: UIButton!
@@ -27,15 +29,14 @@ class Register: UIViewController {
         let myPhoneNumber = phoneNumber.text
         let myPassword = password.text
         
-        self.ref.child("Deliverers").setValue(["phoneNum": myPhoneNumber, "password": myPassword])
+        self.ref.child(user!).setValue(["phoneNum": myPhoneNumber, "password": myPassword])
         performSegue(withIdentifier: "goToLogin", sender: nil)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         ref = Database.database().reference()
-        
     }
     
 }
