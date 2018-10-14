@@ -46,7 +46,7 @@ class indvSurvey: FormViewController{
                 $0.add(rule: RuleRequired())
                 $0.add(rule: RuleEmail())
                 $0.validationOptions = .validatesOnChangeAfterBlurred
-                row.placeholder = "Enter email"
+                $0.placeholder = "Enter email"
             }
             
             <<< DateRow(){
@@ -67,16 +67,17 @@ class indvSurvey: FormViewController{
                 $0.title = "How many meals do you need per week?"
             }
             
-            <<< PickerRow<String>() {
+            <<< PickerInlineRow<String>() {
                 $0.title = "Approximate yearly Income"
-                $0.selectorTitle = "Select income range"
+            
+                
                 $0.options = ["Less than $5000", "Less than $15,000", "Less than $30,000", "Less than $50,000", "More than $50,000"]
                 $0.value = "More than $50,000"    // initially selected
             }
             
-            <<< PickerRow<String>() {
+            <<< PickerInlineRow<String>() {
                 $0.title = "Which days can you receive food?"
-                $0.selectorTitle = "Select days"
+            
                 $0.options = ["Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays"]
                 $0.value = "Mondays"    // initially selected
             }
@@ -110,7 +111,7 @@ class orgSurvey: FormViewController{
                 $0.placeholder = "And numbers here"
             }
             +++ Section("Section2")
-            <<<IntRow(){
+            <<< IntRow(){
                 $0.title = "How many meals ca"
             }
             <<< DateRow(){
