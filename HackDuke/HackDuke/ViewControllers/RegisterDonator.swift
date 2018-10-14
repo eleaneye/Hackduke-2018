@@ -28,5 +28,19 @@ class RegisterDonator: FormViewController {
                 row.title = "Other: "
                 row.placeholder = "Enter text here"
         }
+        
+        ButtonRow() {
+        performSegue(withIdentifier: "donorSurvey", sender: nil)
+        }
+    }
+}
+
+class DonorSurvey: FormViewController {
+    
+    @IBOutlet weak var dummyText: UITextView!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
 }
