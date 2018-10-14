@@ -27,6 +27,8 @@
 		4BF4D29821728E4200AE4F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4D29721728E4200AE4F00 /* Assets.xcassets */; };
 		4BF4D29B21728E4200AE4F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4D29921728E4200AE4F00 /* LaunchScreen.storyboard */; };
 		56D8C765C1904B920C552A75 /* Pods_HackDuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE6C6DDAE7FA55F7EEEC7D0 /* Pods_HackDuke.framework */; };
+		8B4C3ACF2173A0AC00A5E931 /* DonatorHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4C3ACE2173A0AC00A5E931 /* DonatorHome.swift */; };
+		8B4C3AD12173A0D900A5E931 /* DonatorHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4C3AD02173A0D900A5E931 /* DonatorHome.storyboard */; };
 		D1B3542E2172CEEE003E3130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1B3542D2172CEEE003E3130 /* GoogleService-Info.plist */; };
 		D1B354322172F769003E3130 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B354312172F769003E3130 /* Choice.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +58,8 @@
 		4BF4D29C21728E4200AE4F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		509D6232D4D7690ABFE2F0F5 /* Pods-HackDuke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackDuke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackDuke/Pods-HackDuke.debug.xcconfig"; sourceTree = "<group>"; };
 		87E145B82303CA7F7EA97B9B /* Pods-HackDuke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackDuke.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackDuke/Pods-HackDuke.release.xcconfig"; sourceTree = "<group>"; };
+		8B4C3ACE2173A0AC00A5E931 /* DonatorHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonatorHome.swift; sourceTree = "<group>"; };
+		8B4C3AD02173A0D900A5E931 /* DonatorHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DonatorHome.storyboard; sourceTree = "<group>"; };
 		9EE6C6DDAE7FA55F7EEEC7D0 /* Pods_HackDuke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackDuke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B3542D2172CEEE003E3130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D1B354312172F769003E3130 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 				4B9CFC502173038A00C1673C /* RegisterDonator.swift */,
 				D1B354312172F769003E3130 /* Choice.swift */,
 				4B9CFC52217381C200C1673C /* DelivererHome.swift */,
+				8B4C3ACE2173A0AC00A5E931 /* DonatorHome.swift */,
 				4B9CFC592173845D00C1673C /* DelivererHomeTV1.swift */,
 				4B9CFC5B2173860100C1673C /* DelivererHomePC1.swift */,
 			);
@@ -116,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				4B9CFC552173820800C1673C /* DelivererHome.storyboard */,
+				8B4C3AD02173A0D900A5E931 /* DonatorHome.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 				4B9CFC4B2173026C00C1673C /* RegisterReceiver.storyboard in Resources */,
 				4BF4D29621728E3A00AE4F00 /* Main.storyboard in Resources */,
 				4B9CFC4D217302AF00C1673C /* RegisterDonator.storyboard in Resources */,
+				8B4C3AD12173A0D900A5E931 /* DonatorHome.storyboard in Resources */,
 				4B9CFC372172E1B500C1673C /* Home.storyboard in Resources */,
 				4B9CFC562173820800C1673C /* DelivererHome.storyboard in Resources */,
 				4B9CFC402172F25200C1673C /* Register.storyboard in Resources */,
@@ -324,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B4C3ACF2173A0AC00A5E931 /* DonatorHome.swift in Sources */,
 				4B9CFC45217300EF00C1673C /* RegisterDeliverer.swift in Sources */,
 				4B9CFC3E2172F15F00C1673C /* Register.swift in Sources */,
 				D1B354322172F769003E3130 /* Choice.swift in Sources */,
