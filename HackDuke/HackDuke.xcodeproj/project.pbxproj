@@ -29,6 +29,7 @@
 		56D8C765C1904B920C552A75 /* Pods_HackDuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE6C6DDAE7FA55F7EEEC7D0 /* Pods_HackDuke.framework */; };
 		D1B3542E2172CEEE003E3130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1B3542D2172CEEE003E3130 /* GoogleService-Info.plist */; };
 		D1B354322172F769003E3130 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B354312172F769003E3130 /* Choice.swift */; };
+		D1B354362173A99D003E3130 /* ReceiverHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B354352173A99D003E3130 /* ReceiverHome.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		9EE6C6DDAE7FA55F7EEEC7D0 /* Pods_HackDuke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackDuke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B3542D2172CEEE003E3130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D1B354312172F769003E3130 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
+		D1B354352173A99D003E3130 /* ReceiverHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReceiverHome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				4B9CFC552173820800C1673C /* DelivererHome.storyboard */,
+				D1B354352173A99D003E3130 /* ReceiverHome.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1B354362173A99D003E3130 /* ReceiverHome.storyboard in Resources */,
 				4BF4D29B21728E4200AE4F00 /* LaunchScreen.storyboard in Resources */,
 				4B9CFC43217300BE00C1673C /* RegisterDeliverer.storyboard in Resources */,
 				D1B3542E2172CEEE003E3130 /* GoogleService-Info.plist in Resources */,

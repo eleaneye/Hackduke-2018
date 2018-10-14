@@ -8,40 +8,41 @@
 
 import Foundation
 import UIKit
+import Alamofire
+
+import Firebase
+import FirebaseCore
+import FirebaseDatabase
 
 
 class Choice: UIViewController {
+    var myPhoneNumber: String?
+    var myPassword: String?
+    var ref: DatabaseReference!
+
     
     @IBOutlet weak var RecipientButton: UIButton!
     @IBOutlet weak var DelivererButton: UIButton!
     @IBOutlet weak var DonatorButton: UIButton!
-    var user: String?
     
     @IBAction func recipientTapped(_ sender: Any) {
-        user = "Recipient"
-        performSegue(withIdentifier: "goToRegister", sender: nil)
+        self.ref.child(myPhoneNumber!).child(myPassword!).setValue(["type": "Recipient"])
+        performSegue(withIdentifier: "Recipient", sender: nil)
     }
     
     @IBAction func delivererTapped(_ sender: Any) {
-        user = "Deliverer"
-        performSegue(withIdentifier: "goToRegister", sender: nil)
+        self.ref.child(myPhoneNumber!).child(myPassword!).setValue(["type": "Deliverer"])
+        performSegue(withIdentifier: "Deliverer", sender: nil)
     }
 
     @IBAction func donatorTapped(_ sender: Any) {
-        user = "Donator"
-        performSegue(withIdentifier: "goToRegister", sender: nil)
+    self.ref.child(myPhoneNumber!).child(myPassword!).setValue(["type": "Donator"])
+        performSegue(withIdentifier: "Donator", sender: nil)
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.destination is Register
-        {
-            let vc = segue.destination as? Register
-            vc?.user = user
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = Database.database().reference()
         }
 
 }

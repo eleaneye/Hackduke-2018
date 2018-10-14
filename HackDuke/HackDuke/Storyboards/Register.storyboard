@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AVy-5n-Ygb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VQB-KW-vHV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Register-->
         <scene sceneID="mCH-ca-le8">
             <objects>
-                <viewController id="VQB-KW-vHV" customClass="Register" customModule="HackDuke" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Register" id="VQB-KW-vHV" customClass="Register" customModule="HackDuke" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3CZ-Fa-kPl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,19 +52,17 @@
                     <connections>
                         <outlet property="password" destination="0fq-gv-K2G" id="QPc-eC-X66"/>
                         <outlet property="phoneNumber" destination="rQc-vj-J1x" id="ayI-Xx-Zm2"/>
-                        <segue destination="gUi-LQ-jyw" kind="show" identifier="Deliverer" id="lba-tL-cQT"/>
-                        <segue destination="8QK-C6-yrr" kind="show" identifier="Donator" id="QK8-je-yyz"/>
-                        <segue destination="Iu1-jJ-OyA" kind="show" identifier="Recipient" id="3FH-Op-N9e"/>
+                        <segue destination="AVy-5n-Ygb" kind="show" identifier="goToChoice" id="r27-re-4jl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1d6-QD-K6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1880.8" y="-228.03598200899552"/>
+            <point key="canvasLocation" x="769" y="-242"/>
         </scene>
         <!--Choice-->
         <scene sceneID="vqh-lo-y0D">
             <objects>
-                <viewController storyboardIdentifier="Register" id="AVy-5n-Ygb" customClass="Choice" customModule="HackDuke" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AVy-5n-Ygb" customClass="Choice" customModule="HackDuke" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YsG-Y3-3nD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,6 +92,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="recipientTapped:" destination="AVy-5n-Ygb" eventType="touchUpInside" id="Lgh-BG-xi2"/>
+                                    <segue destination="Iu1-jJ-OyA" kind="show" identifier="Recipient" id="E5G-bC-bNC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUZ-x5-4ys">
@@ -101,6 +100,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="delivererTapped:" destination="AVy-5n-Ygb" eventType="touchUpInside" id="Cji-5y-tOK"/>
+                                    <segue destination="gUi-LQ-jyw" kind="show" identifier="Deliverer" id="TDB-2R-1XL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dj-ov-Rrg">
@@ -108,6 +108,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="donatorTapped:" destination="AVy-5n-Ygb" eventType="touchUpInside" id="5Eu-nZ-ONK"/>
+                                    <segue destination="8QK-C6-yrr" kind="show" identifier="Donator" id="N3o-dj-h9u"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -115,12 +116,14 @@
                         <viewLayoutGuide key="safeArea" id="QXu-br-XQH"/>
                     </view>
                     <connections>
-                        <segue destination="VQB-KW-vHV" kind="show" identifier="goToRegister" id="7HW-lc-A9t"/>
+                        <outlet property="DelivererButton" destination="MUZ-x5-4ys" id="3W0-pd-ZGU"/>
+                        <outlet property="DonatorButton" destination="4dj-ov-Rrg" id="gag-Ek-Gn3"/>
+                        <outlet property="RecipientButton" destination="nIF-HY-CKh" id="MQr-Zk-vTI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yVU-y6-ZqZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="-228.03598200899552"/>
+            <point key="canvasLocation" x="1769" y="-228"/>
         </scene>
         <!--RegisterDeliverer-->
         <scene sceneID="u7d-wt-NMq">
