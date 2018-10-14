@@ -57,7 +57,7 @@ class DelivererHome: UIViewController, UITableViewDataSource, UITableViewDelegat
             selected = saved[indexPath.row]
         }
         else {
-            selected = availible[indexPath.row]
+            selected = others[indexPath.row]
         }
         
        

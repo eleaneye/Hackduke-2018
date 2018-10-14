@@ -20,8 +20,6 @@ class DeliveryConfirm:UIViewController {
         let latitude = 0
         let longitude = 0
         
-        
-        
         UIApplication.shared.openURL(URL(string:"comgooglemaps://?saddr=&daddr=\(Float(latitude)),\(Float(longitude))&directionsmode=driving")!)
     }
     

@@ -269,7 +269,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="re0-L1-hYg">
-                                <rect key="frame" x="41" y="100" width="121" height="33"/>
+                                <rect key="frame" x="41" y="100" width="282" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
                                 <nil key="textColor"/>
@@ -325,10 +325,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZW3-6I-xZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1290" y="150"/>
+            <point key="canvasLocation" x="1288.8" y="149.77511244377811"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LwV-yl-qCl"/>
+        <segue reference="cDL-pm-Yae"/>
     </inferredMetricsTieBreakers>
 </document>

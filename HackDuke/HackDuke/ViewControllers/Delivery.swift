@@ -105,8 +105,11 @@ class Delivery: UIViewController, GMSPlacePickerViewControllerDelegate {
     var recipient: String = ""
     
     @IBAction func submit(_ sender: Any) {
-        let store = storeAddresses[receivedStoreName!]
+        let store = storeAddresses[receivedStoreName!]!
         
+        print(store)
+        
+//        let store = "3039 E Cornwallis Rd, Research Triangle Park, NC 27709"
         let receipents = ["3039 E Cornwallis Rd, Research Triangle Park, NC 27709",
                           "100 SAS Campus Dr, Cary, NC 27513",
                           "966 High House Rd #124, Cary, NC 27513"
@@ -148,7 +151,7 @@ class Delivery: UIViewController, GMSPlacePickerViewControllerDelegate {
                     if let json = response.result.value as? NSDictionary {
                         let rows = (((json["rows"]! as! [NSDictionary])[0]["elements"]!) as! [NSDictionary])[0]["duration"]!
                         let text = (rows as! NSDictionary)["text"]! as! String
-                        let result = Int(text.replacingOccurrences(of: " mins", with: ""))!
+                        let result = Int(text.replacingOccurrences(of: " mins", with: "").replacingOccurrences(of: " min", with: ""))!
                         stage1[receipent] = result
                     }
                     myGroup.leave()
