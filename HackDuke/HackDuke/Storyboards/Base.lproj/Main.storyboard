@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email or phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VNZ-LX-1yu">
-                                <rect key="frame" x="88" y="321" width="200" height="30"/>
+                                <rect key="frame" x="87" y="321" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -53,20 +53,15 @@
                                 <rect key="frame" x="70" y="108" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6D-cM-MSZ">
-                                <rect key="frame" x="71" y="379" width="244" height="131"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginicon" translatesAutoresizingMaskIntoConstraints="NO" id="TeX-yi-uxJ">
+                                <rect key="frame" x="118" y="409" width="152" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log In" image="loginicon"/>
-                                <connections>
-                                    <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ee-Rx-sjs"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="logButton" destination="c6D-cM-MSZ" id="59s-V9-K6h"/>
                         <outlet property="password" destination="wah-E9-bLk" id="WCk-zo-yOs"/>
                         <outlet property="phoneNumber" destination="VNZ-LX-1yu" id="Rww-mr-bMr"/>
                         <outlet property="register" destination="gN6-fg-U7G" id="t0q-0J-vLO"/>
@@ -97,6 +92,6 @@
     </scenes>
     <resources>
         <image name="chiplogo" width="750" height="1334"/>
-        <image name="loginicon" width="540" height="360"/>
+        <image name="loginicon" width="750" height="250"/>
     </resources>
 </document>
