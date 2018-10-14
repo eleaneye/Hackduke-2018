@@ -33,10 +33,22 @@ class LogIn: UIViewController {
         let myPhoneNumber = phoneNumber.text
         let myPassword = password.text
         
-        self.ref.child("Deliverers").setValue(["phoneNum": myPhoneNumber, "password": myPassword])
-        performSegue(withIdentifier: "enterHome", sender: nil)
-    }
-    
+        ref.observe(DataEventType.value, with: { (snapshot) in
+
+        //iterating through all the values
+            for users in snapshot.children.allObjects as! [DataSnapshot] {
+            //getting values
+            let userObject = users.value as? [String: AnyObject]
+            let thisphoneNumber  = userObject?[myPhoneNumber!]
+                print(thisphoneNumber)
+                if ((thisphoneNumber?.isEqual(myPhoneNumber))!) {
+                    let thistype  = userObject?[myPassword!]
+                    print(thistype)
+                    self.performSegue(withIdentifier: thistype as! String, sender: nil)
+            }
+        }
+        })
+        }
     
     @IBAction func register(_ sender: Any) {
         performSegue(withIdentifier: "register", sender: nil)

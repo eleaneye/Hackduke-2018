@@ -92,7 +92,7 @@
         <!--Register-->
         <scene sceneID="tGb-KD-uwb">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="register" storyboardName="Register" referencedIdentifier="Register" id="LNl-Kc-SsW" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="Register" storyboardName="Register" referencedIdentifier="Register" id="LNl-Kc-SsW" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d8g-Wk-bnx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="735" y="26"/>

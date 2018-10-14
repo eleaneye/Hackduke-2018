@@ -16,8 +16,9 @@ import FirebaseDatabase
 
 class Register: UIViewController {
     
-    var user: String?
-
+    var myPhoneNumber: String?
+    var myPassword: String?
+    
     var ref: DatabaseReference!
     
     @IBOutlet weak var register: UIButton!
@@ -26,20 +27,25 @@ class Register: UIViewController {
     @IBOutlet weak var password: UITextField!
     
     @IBAction func register(_ sender: Any) {
-        let myPhoneNumber = phoneNumber.text
-        let myPassword = password.text
-        
-        self.ref.child(user!).child(myPhoneNumber!).setValue(["password": myPassword!])
-        
-  
-        performSegue(withIdentifier: user!, sender: nil)
+        myPhoneNumber = phoneNumber.text
+        myPassword = password.text
+                
+        performSegue(withIdentifier: "goToChoice", sender: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is Choice
+        {
+            let vc = segue.destination as? Choice
+            vc?.myPhoneNumber = myPhoneNumber!
+            vc?.myPassword = myPassword!
+        }
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        ref = Database.database().reference()
-    }
+        }
     
 }
 
