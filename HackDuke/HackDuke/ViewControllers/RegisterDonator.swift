@@ -28,5 +28,16 @@ class RegisterDonator: FormViewController {
                 row.title = "Other: "
                 row.placeholder = "Enter text here"
         }
+        
+        form +++ ButtonRow() {row in
+        
+            row.title = "Submit"}.onCellSelection({_,_ in self.performSegue(withIdentifier: "donorSurvey", sender: nil)})
+        }
+    }
+
+class DonorSurvey: FormViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
 }
