@@ -25,7 +25,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="tel"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gN6-fg-U7G">
-                                <rect key="frame" x="159" y="535" width="57" height="30"/>
+                                <rect key="frame" x="88" y="527" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.96889001131057739" green="0.79834109544754028" blue="0.27957978844642639" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -34,6 +34,14 @@
                                     <action selector="register:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0rD-oS-orv"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Not a user yet? " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Ek-jD-PIi">
+                                <rect key="frame" x="88" y="496" width="200" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wah-E9-bLk">
                                 <rect key="frame" x="87" y="374" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -49,14 +57,10 @@
                                     <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ee-Rx-sjs"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Not a user yet? " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Ek-jD-PIi">
-                                <rect key="frame" x="131" y="494" width="114" height="33"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chiplogo" translatesAutoresizingMaskIntoConstraints="NO" id="s1a-rh-iHY">
+                                <rect key="frame" x="70" y="108" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -92,6 +96,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chiplogo" width="750" height="1334"/>
         <image name="loginicon" width="559" height="156"/>
     </resources>
 </document>
