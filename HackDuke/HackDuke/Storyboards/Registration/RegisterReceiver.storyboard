@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,13 +17,77 @@
                     <view key="view" contentMode="scaleToFill" id="Ysl-NN-9Pv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oX-RP-vEW">
+                                <rect key="frame" x="53" y="338" width="268" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91605150699615479" green="0.63381463289260864" blue="0.31634789705276489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <size key="titleShadowOffset" width="10" height="10"/>
+                                <state key="normal" title="Organization">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dzM-M9-WFK" kind="show" identifier="org" id="BPX-y2-XEk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifj-rK-ycI">
+                                <rect key="frame" x="53" y="113" width="268" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90980392156862744" green="0.63137254901960782" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <size key="titleShadowOffset" width="10" height="10"/>
+                                <state key="normal" title="Individual">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="indvAcct:" destination="oza-oz-dqX" eventType="touchUpInside" id="tvC-2C-DnF"/>
+                                    <action selector="organization:" destination="oza-oz-dqX" eventType="touchUpInside" id="Yaz-94-PlU"/>
+                                    <segue destination="DMl-4a-emq" kind="show" identifier="indv" id="sxw-Bz-z6V"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="H7i-qo-QZU"/>
                     </view>
+                    <connections>
+                        <outlet property="makeIndividual" destination="Ifj-rK-ycI" id="LVv-c5-g5u"/>
+                        <outlet property="makeOrg" destination="2oX-RP-vEW" id="hxn-1q-sED"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q38-y7-gta" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="62" y="116"/>
+            <point key="canvasLocation" x="61.600000000000001" y="115.59220389805098"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yHZ-zz-gJC">
+            <objects>
+                <viewController storyboardIdentifier="orgSurvey" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dzM-M9-WFK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f82-bl-x9S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VNA-w7-jPn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n2A-SS-8Rs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="791" y="563"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cmX-LB-DE8">
+            <objects>
+                <viewController storyboardIdentifier="indvSurvey" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DMl-4a-emq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FDo-en-i9c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="M6A-4j-ugY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6vB-8w-qwM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="841" y="-170"/>
         </scene>
     </scenes>
 </document>
