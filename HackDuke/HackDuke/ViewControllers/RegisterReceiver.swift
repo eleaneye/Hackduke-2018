@@ -85,7 +85,7 @@ class indvSurvey: FormViewController{
                 $0.title = "Allergies"
                 $0.placeholder = "Enter any allergies, or NA if none."
             }
-            
+        
         
         
     }
