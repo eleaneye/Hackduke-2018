@@ -12,7 +12,7 @@
         <!--Register Deliver-->
         <scene sceneID="33b-Bt-wIM">
             <objects>
-                <viewController storyboardIdentifier="RegisterDeliver" id="aLv-2V-iwK" customClass="RegisterDeliver" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterDeliver" id="aLv-2V-iwK" customClass="RegisterDeliver" customModule="HackDuke" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gwv-Sl-ucQ" customClass="RegisterDeliver" customModule="HackDuke" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
