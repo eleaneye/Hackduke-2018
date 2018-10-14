@@ -10,5 +10,8 @@ target 'HackDuke' do
   # Pods for HackDuke
   pod 'Alamofire', '~> 4.0'
   pod 'Eureka'
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'GoogleMaps'
 end
 
