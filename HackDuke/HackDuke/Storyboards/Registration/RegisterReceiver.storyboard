@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,8 +40,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="indvAcct:" destination="oza-oz-dqX" eventType="touchUpInside" id="tvC-2C-DnF"/>
-                                    <action selector="organization:" destination="oza-oz-dqX" eventType="touchUpInside" id="Yaz-94-PlU"/>
                                     <segue destination="DMl-4a-emq" kind="show" identifier="indv" id="sxw-Bz-z6V"/>
                                 </connections>
                             </button>
@@ -59,11 +56,11 @@
             </objects>
             <point key="canvasLocation" x="61.600000000000001" y="115.59220389805098"/>
         </scene>
-        <!--View Controller-->
+        <!--Org Survey-->
         <scene sceneID="yHZ-zz-gJC">
             <objects>
-                <viewController storyboardIdentifier="orgSurvey" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dzM-M9-WFK" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="f82-bl-x9S">
+                <viewController storyboardIdentifier="orgSurvey" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dzM-M9-WFK" customClass="orgSurvey" customModule="HackDuke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="org" id="f82-bl-x9S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,11 +71,11 @@
             </objects>
             <point key="canvasLocation" x="791" y="563"/>
         </scene>
-        <!--View Controller-->
+        <!--Indv Survey-->
         <scene sceneID="cmX-LB-DE8">
             <objects>
-                <viewController storyboardIdentifier="indvSurvey" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DMl-4a-emq" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="FDo-en-i9c">
+                <viewController storyboardIdentifier="indvSurvey" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DMl-4a-emq" customClass="indvSurvey" customModule="HackDuke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="indv" id="FDo-en-i9c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

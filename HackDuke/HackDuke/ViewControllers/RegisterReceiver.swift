@@ -15,13 +15,13 @@ class RegisterReceiver: UIViewController {
     @IBOutlet weak var makeOrg: UIButton!
     @IBOutlet weak var makeIndividual: UIButton!
     
-    @IBAction func orgAcct(_ sender: Any) {
-        performSegue(withIdentifier: org, sender: nil)
-    }
-    
-    @IBAction func indvAcct(_ sender: Any) {
-        performSegue(withIdentifier: indv, sender: nil)
-    }
+//    @IBAction func orgAcct(_ sender: Any) {
+//        performSegue(withIdentifier: "org", sender: nil)
+//    }
+//    
+//    @IBAction func indvAcct(_ sender: Any) {
+//        performSegue(withIdentifier: "indv", sender: nil)
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,7 +32,7 @@ class RegisterReceiver: UIViewController {
 class orgSurvey: FormViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
-        let fname;lname;email;phone;bdate
+        let fname: String?, lname: String?, email: String?, phone:String?, bdate:String?
         form +++ Section("Section1")
             
             <<< TextRow(){ row in
@@ -58,7 +58,7 @@ class orgSurvey: FormViewController{
 class indvSurvey: FormViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
-        let fname;lname;email;phone;bdate
+        let fname: String?, lname: String?, email: String?, phone:String?, bdate:String?
         form +++ Section("Section1")
             
             <<< TextRow(){ row in
