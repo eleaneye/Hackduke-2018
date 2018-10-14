@@ -36,7 +36,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="tel"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYi-fL-LaB">
-                                <rect key="frame" x="19" y="387" width="350" height="84"/>
+                                <rect key="frame" x="42" y="398" width="302" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register" image="registerbutton">
                                     <color key="titleColor" red="0.96889001129999996" green="0.79834109539999998" blue="0.27957978839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -70,7 +70,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ht-MW-zbT">
-                                <rect key="frame" x="15" y="451" width="360" height="194"/>
+                                <rect key="frame" x="15" y="439" width="360" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <state key="normal" title="Donator" image="DonatorIcon"/>
@@ -79,7 +79,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDO-71-XqQ">
-                                <rect key="frame" x="16" y="291" width="360" height="196"/>
+                                <rect key="frame" x="16" y="273" width="360" height="196"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Deliverer" image="deliverericon"/>
                                 <connections>
@@ -87,7 +87,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsA-ec-c6c">
-                                <rect key="frame" x="16" y="139" width="360" height="186"/>
+                                <rect key="frame" x="16" y="118" width="360" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Recipient" image="recipienticon"/>
                                 <connections>
