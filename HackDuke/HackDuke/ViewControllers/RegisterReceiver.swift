@@ -87,7 +87,8 @@ class indvSurvey: FormViewController{
                 $0.placeholder = "Enter any allergies, or NA if none."
             }
         
-        
+        form +++ ButtonRow() {row in
+            row.title = "Submit"}.onCellSelection({_,_ in self.performSegue(withIdentifier: "IndHome", sender: nil)})
         
     }
 }
@@ -118,5 +119,17 @@ class orgSurvey: FormViewController{
                 $0.title = "Date Row"
                 $0.value = Date(timeIntervalSinceReferenceDate: 0)
         }
+        form +++ ButtonRow() {row in
+            row.title = "Submit"}.onCellSelection({_,_ in self.performSegue(withIdentifier: "OrgHome", sender: nil)})
+    }
+}
+
+class RecientHome: UIViewController {
+    
+    
+    @IBOutlet weak var dummy: UITextView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
 }
