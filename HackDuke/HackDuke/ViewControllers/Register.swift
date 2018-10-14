@@ -29,8 +29,8 @@ class Register: UIViewController {
         let myPhoneNumber = phoneNumber.text
         let myPassword = password.text
         
-        self.ref.child(user!).setValue(["phoneNum": myPhoneNumber, "password": myPassword])
-        performSegue(withIdentifier: "goToLogin", sender: nil)
+        self.ref.child(user!).child(myPhoneNumber!).setValue(["password": myPassword!])
+        performSegue(withIdentifier: user!, sender: nil)
     }
 
     override func viewDidLoad() {

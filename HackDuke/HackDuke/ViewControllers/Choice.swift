@@ -33,9 +33,9 @@ class Choice: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.destination is Choice
+        if segue.destination is Register
         {
-            let vc = segue.destination as? Choice
+            let vc = segue.destination as? Register
             vc?.user = user
         }
     }
