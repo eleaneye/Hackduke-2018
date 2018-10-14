@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         let myPhoneNumber = phoneNumber.text
         let myPassword = password.text
         
-        self.ref.child("Donators").setValue(["phone_num": myPhoneNumber], ["password": myPassword])
+        self.ref.child("Users").child("Donators").setValue(["phone_num": myPhoneNumber], ["password": myPassword])
     }
     
     override func viewDidLoad() {
