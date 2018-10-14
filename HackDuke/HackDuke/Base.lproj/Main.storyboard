@@ -41,9 +41,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="getPhoneNumber:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="lM1-mh-1ZU"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wah-E9-bLk">
                                 <rect key="frame" x="140" y="369" width="200" height="30"/>
@@ -51,16 +48,13 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="getPassword:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="XFQ-nt-HpO"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6D-cM-MSZ">
                                 <rect key="frame" x="219" y="463" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
-                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ic-Ge-3th"/>
+                                    <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sQc-F8-GFf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -68,9 +62,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="logButton" destination="c6D-cM-MSZ" id="o4t-Qv-xav"/>
                         <outlet property="password" destination="wah-E9-bLk" id="031-wH-vDX"/>
                         <outlet property="phoneNumber" destination="VNZ-LX-1yu" id="ies-bo-nKA"/>
-                        <outlet property="submitButton" destination="c6D-cM-MSZ" id="rgF-XX-alZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

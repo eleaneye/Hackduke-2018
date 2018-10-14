@@ -8,11 +8,15 @@
 
 import UIKit
 import Alamofire
+
+import Firebase
+import FirebaseCore
 import FirebaseDatabase
+
 
 class ViewController: UIViewController {
     
-    var ref: DatabaseReference! = Database.database().reference()
+    var ref: DatabaseReference!
 
     @IBOutlet weak var phoneNumber: UITextField!
 
@@ -24,13 +28,14 @@ class ViewController: UIViewController {
         let myPhoneNumber = phoneNumber.text
         let myPassword = password.text
         
-        self.ref.child("Users").child("Donators").setValue(["phone_num": myPhoneNumber], ["password": myPassword])
+        self.ref.child("Deliverers").setValue(["phoneNum": myPhoneNumber, "password": myPassword])
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+        
+        ref = Database.database().reference()
        
     }
 
