@@ -7,21 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B9CFC322172E10400C1673C /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CFC312172E10400C1673C /* AppStoryboard.swift */; };
+		4B9CFC372172E1B500C1673C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9CFC362172E1B500C1673C /* Home.storyboard */; };
+		4B9CFC3B2172E64600C1673C /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9CFC3A2172E64600C1673C /* Register.storyboard */; };
+		4B9CFC3E2172F15F00C1673C /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CFC3D2172E7A200C1673C /* Register.swift */; };
 		4BF4D29121728E3A00AE4F00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4D29021728E3A00AE4F00 /* AppDelegate.swift */; };
-		4BF4D29321728E3A00AE4F00 /* LogInTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4D29221728E3A00AE4F00 /* LogInTab.swift */; };
+		4BF4D29321728E3A00AE4F00 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4D29221728E3A00AE4F00 /* LogIn.swift */; };
 		4BF4D29621728E3A00AE4F00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4D29421728E3A00AE4F00 /* Main.storyboard */; };
 		4BF4D29821728E4200AE4F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4D29721728E4200AE4F00 /* Assets.xcassets */; };
 		4BF4D29B21728E4200AE4F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4D29921728E4200AE4F00 /* LaunchScreen.storyboard */; };
 		56D8C765C1904B920C552A75 /* Pods_HackDuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE6C6DDAE7FA55F7EEEC7D0 /* Pods_HackDuke.framework */; };
 		D1B3542E2172CEEE003E3130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1B3542D2172CEEE003E3130 /* GoogleService-Info.plist */; };
-		D1B354302172D836003E3130 /* RegisterTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B3542F2172D836003E3130 /* RegisterTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B63DF522172A89800E1A7AB /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4B9CFC312172E10400C1673C /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
+		4B9CFC362172E1B500C1673C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		4B9CFC3A2172E64600C1673C /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Register.storyboard; path = ../../../../../.Trash/Register.storyboard; sourceTree = "<group>"; };
+		4B9CFC3D2172E7A200C1673C /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		4BF4D28D21728E3A00AE4F00 /* HackDuke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackDuke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF4D29021728E3A00AE4F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4BF4D29221728E3A00AE4F00 /* LogInTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInTab.swift; sourceTree = "<group>"; };
+		4BF4D29221728E3A00AE4F00 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		4BF4D29521728E3A00AE4F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BF4D29721728E4200AE4F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BF4D29A21728E4200AE4F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,7 +37,6 @@
 		87E145B82303CA7F7EA97B9B /* Pods-HackDuke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackDuke.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackDuke/Pods-HackDuke.release.xcconfig"; sourceTree = "<group>"; };
 		9EE6C6DDAE7FA55F7EEEC7D0 /* Pods_HackDuke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackDuke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B3542D2172CEEE003E3130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D1B3542F2172D836003E3130 /* RegisterTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B9CFC352172E16B00C1673C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4B9CFC3A2172E64600C1673C /* Register.storyboard */,
+				4BF4D29921728E4200AE4F00 /* LaunchScreen.storyboard */,
+				4BF4D29421728E3A00AE4F00 /* Main.storyboard */,
+				4B9CFC362172E1B500C1673C /* Home.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4B9CFC3C2172E79D00C1673C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BF4D29221728E3A00AE4F00 /* LogIn.swift */,
+				4B9CFC3D2172E7A200C1673C /* Register.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		4BF4D28421728E3A00AE4F00 = {
 			isa = PBXGroup;
 			children = (
@@ -66,15 +92,14 @@
 		4BF4D28F21728E3A00AE4F00 /* HackDuke */ = {
 			isa = PBXGroup;
 			children = (
+				4B9CFC3C2172E79D00C1673C /* ViewControllers */,
+				4B9CFC352172E16B00C1673C /* Storyboards */,
 				D1B3542D2172CEEE003E3130 /* GoogleService-Info.plist */,
 				4B63DF522172A89800E1A7AB /* MyPlayground.playground */,
 				4BF4D29021728E3A00AE4F00 /* AppDelegate.swift */,
-				4BF4D29221728E3A00AE4F00 /* LogInTab.swift */,
-				4BF4D29421728E3A00AE4F00 /* Main.storyboard */,
 				4BF4D29721728E4200AE4F00 /* Assets.xcassets */,
-				4BF4D29921728E4200AE4F00 /* LaunchScreen.storyboard */,
 				4BF4D29C21728E4200AE4F00 /* Info.plist */,
-				D1B3542F2172D836003E3130 /* RegisterTab.swift */,
+				4B9CFC312172E10400C1673C /* AppStoryboard.swift */,
 			);
 			path = HackDuke;
 			sourceTree = "<group>";
@@ -160,6 +185,8 @@
 				D1B3542E2172CEEE003E3130 /* GoogleService-Info.plist in Resources */,
 				4BF4D29821728E4200AE4F00 /* Assets.xcassets in Resources */,
 				4BF4D29621728E3A00AE4F00 /* Main.storyboard in Resources */,
+				4B9CFC372172E1B500C1673C /* Home.storyboard in Resources */,
+				4B9CFC3B2172E64600C1673C /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,9 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BF4D29321728E3A00AE4F00 /* LogInTab.swift in Sources */,
+				4B9CFC3E2172F15F00C1673C /* Register.swift in Sources */,
+				4B9CFC322172E10400C1673C /* AppStoryboard.swift in Sources */,
+				4BF4D29321728E3A00AE4F00 /* LogIn.swift in Sources */,
 				4BF4D29121728E3A00AE4F00 /* AppDelegate.swift in Sources */,
-				D1B354302172D836003E3130 /* RegisterTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

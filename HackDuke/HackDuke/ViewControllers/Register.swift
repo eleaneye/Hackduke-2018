@@ -14,11 +14,11 @@ import Firebase
 import FirebaseCore
 import FirebaseDatabase
 
-class RegisterTab: UIViewController {
+class Register: UIViewController {
     
     var ref: DatabaseReference!
     
-    @IBOutlet weak var Register: UIButton!
+    @IBOutlet weak var register: UIButton!
     @IBOutlet weak var phoneNumber: UITextField!
     
     @IBOutlet weak var password: UITextField!

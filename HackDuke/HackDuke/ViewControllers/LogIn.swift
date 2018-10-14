@@ -14,13 +14,17 @@ import FirebaseCore
 import FirebaseDatabase
 
 
-class LoginTab: UIViewController {
+class LogIn: UIViewController {
     
     var ref: DatabaseReference!
 
-    @IBOutlet weak var Register: UIButton!
-    @IBOutlet weak var phoneNumber: UITextField!
 
+    @IBOutlet weak var register: UIButton!
+    
+    @IBOutlet weak var phoneNumber: UITextField!
+    
+
+    
     @IBOutlet weak var password: UITextField!
     
     @IBOutlet weak var logButton: UIButton!
@@ -35,7 +39,7 @@ class LoginTab: UIViewController {
     
     
     @IBAction func register(_ sender: Any) {
-        performSegue(withIdentifier: "newUser", sender: nil)
+        performSegue(withIdentifier: "register", sender: nil)
     }
     
     override func viewDidLoad() {
