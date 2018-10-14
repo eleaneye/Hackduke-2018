@@ -9,7 +9,7 @@
 import Foundation
 import Eureka
 
-class RegisterDeliver: FormViewController {
+class RegisterDeliverer: FormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

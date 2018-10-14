@@ -18,10 +18,7 @@ class RegisterDonator: FormViewController {
                 row.title = "Text Row"
                 row.placeholder = "Enter text here"
             }
-            <<< PhoneRow(){
-                $0.title = "Phone Row"
-                $0.placeholder = "And numbers here"
-            }
+
             +++ Section("Section2")
             <<< DateRow(){
                 $0.title = "Date Row"
