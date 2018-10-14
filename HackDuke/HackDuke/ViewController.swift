@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     var ref: DatabaseReference!
 
+    @IBOutlet weak var Register: UIButton!
     @IBOutlet weak var phoneNumber: UITextField!
 
     @IBOutlet weak var password: UITextField!
@@ -30,6 +31,11 @@ class ViewController: UIViewController {
         
         self.ref.child("Deliverers").setValue(["phoneNum": myPhoneNumber, "password": myPassword])
         performSegue(withIdentifier: "enterHome", sender: nil)
+    }
+    
+    
+    @IBAction func register(_ sender: Any) {
+        performSegue(withIdentifier: "newUser", sender: nil)
     }
     
     override func viewDidLoad() {
