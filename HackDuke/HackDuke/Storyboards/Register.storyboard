@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VQB-KW-vHV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AVy-5n-Ygb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Register-->
         <scene sceneID="mCH-ca-le8">
             <objects>
-                <viewController storyboardIdentifier="Register" id="VQB-KW-vHV" customClass="Register" customModule="HackDuke" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VQB-KW-vHV" customClass="Register" customModule="HackDuke" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3CZ-Fa-kPl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,14 +42,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYi-fL-LaB">
-                                <rect key="frame" x="168" y="420" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Register"/>
-                                <connections>
-                                    <action selector="register:" destination="VQB-KW-vHV" eventType="touchUpInside" id="gIu-aP-XgS"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0fq-gv-K2G">
                                 <rect key="frame" x="149" y="333" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -57,22 +49,97 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYi-fL-LaB">
+                                <rect key="frame" x="159" y="423" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="register:" destination="VQB-KW-vHV" eventType="touchUpInside" id="gIu-aP-XgS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pIa-QQ-wyP"/>
                     </view>
                     <connections>
-                        <outlet property="Register" destination="EYi-fL-LaB" id="vH1-XP-4h8"/>
                         <outlet property="password" destination="0fq-gv-K2G" id="QPc-eC-X66"/>
                         <outlet property="phoneNumber" destination="rQc-vj-J1x" id="ayI-Xx-Zm2"/>
+                        <segue destination="gUi-LQ-jyw" kind="show" id="lba-tL-cQT"/>
+                        <segue destination="8QK-C6-yrr" kind="show" id="QK8-je-yyz"/>
+                        <segue destination="Iu1-jJ-OyA" kind="show" id="3FH-Op-N9e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1d6-QD-K6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937" y="-251"/>
+            <point key="canvasLocation" x="1882" y="-228"/>
+        </scene>
+        <!--Choice-->
+        <scene sceneID="vqh-lo-y0D">
+            <objects>
+                <viewController storyboardIdentifier="Register" id="AVy-5n-Ygb" customClass="Choice" customModule="HackDuke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YsG-Y3-3nD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ht-MW-zbT">
+                                <rect key="frame" x="124" y="385" width="127" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Donator"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDO-71-XqQ">
+                                <rect key="frame" x="124" y="271" width="127" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Deliverer"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsA-ec-c6c">
+                                <rect key="frame" x="124" y="156" width="127" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Recipient"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QXu-br-XQH"/>
+                    </view>
+                    <connections>
+                        <outlet property="DelivererButton" destination="YDO-71-XqQ" id="ZeO-Ra-Iv3"/>
+                        <outlet property="DonatorButton" destination="9ht-MW-zbT" id="5Oa-8y-Hdh"/>
+                        <outlet property="RecipientButton" destination="tsA-ec-c6c" id="z5Q-mV-yYz"/>
+                        <segue destination="VQB-KW-vHV" kind="show" identifier="goToRegister" id="7HW-lc-A9t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yVU-y6-ZqZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="-228"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="u7d-wt-NMq">
+            <objects>
+                <viewControllerPlaceholder id="gUi-LQ-jyw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v4x-Ex-cgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2482" y="-369"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="cZG-pe-W9K">
+            <objects>
+                <viewControllerPlaceholder id="8QK-C6-yrr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7b-cm-CTk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2706" y="-252"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="qgb-ed-9Qo">
+            <objects>
+                <viewControllerPlaceholder id="Iu1-jJ-OyA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Mf-dF-cqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2481" y="-128"/>
         </scene>
     </scenes>
     <resources>
-        <image name="1-3" width="375" height="225"/>
+        <image name="1-3" width="500" height="300"/>
     </resources>
 </document>

@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.3)
+  - Eureka (4.3.0)
   - Firebase/Core (5.10.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.2.0)
@@ -59,12 +60,14 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - Eureka
   - Firebase/Core
   - Firebase/Database
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Eureka
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -77,6 +80,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Eureka: 6d711cb30ca333b4bc893110285a722ae3840114
   Firebase: 6691d47562a780c26281ce8464518faafc90c610
   FirebaseAnalytics: 831f1f127f4a75698e9875a87bf7e2668730d953
   FirebaseCore: c6079de64c1a87000e52e9b408dddcadc901177f
@@ -87,6 +91,6 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: b5fc6f47fc2faa2796221133cc7ffb4b3210bdd1
+PODFILE CHECKSUM: a2694651c81187a4e79e2c8d5824d8886d39117b
 
 COCOAPODS: 1.5.3

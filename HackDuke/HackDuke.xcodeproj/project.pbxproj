@@ -11,6 +11,12 @@
 		4B9CFC372172E1B500C1673C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9CFC362172E1B500C1673C /* Home.storyboard */; };
 		4B9CFC3E2172F15F00C1673C /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CFC3D2172E7A200C1673C /* Register.swift */; };
 		4B9CFC402172F25200C1673C /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9CFC3F2172F25200C1673C /* Register.storyboard */; };
+		4B9CFC43217300BE00C1673C /* RegisterDeliver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9CFC42217300BE00C1673C /* RegisterDeliver.storyboard */; };
+		4B9CFC45217300EF00C1673C /* RegisterDeliver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CFC44217300EF00C1673C /* RegisterDeliver.swift */; };
+		4B9CFC4B2173026C00C1673C /* RegisterReceiver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9CFC4A2173026C00C1673C /* RegisterReceiver.storyboard */; };
+		4B9CFC4D217302AF00C1673C /* RegisterDonator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9CFC4C217302AF00C1673C /* RegisterDonator.storyboard */; };
+		4B9CFC4F2173037A00C1673C /* RegisterReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CFC4E2173037A00C1673C /* RegisterReceiver.swift */; };
+		4B9CFC512173038A00C1673C /* RegisterDonator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CFC502173038A00C1673C /* RegisterDonator.swift */; };
 		4BF4D29121728E3A00AE4F00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4D29021728E3A00AE4F00 /* AppDelegate.swift */; };
 		4BF4D29321728E3A00AE4F00 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4D29221728E3A00AE4F00 /* LogIn.swift */; };
 		4BF4D29621728E3A00AE4F00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4D29421728E3A00AE4F00 /* Main.storyboard */; };
@@ -19,6 +25,7 @@
 		56D8C765C1904B920C552A75 /* Pods_HackDuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE6C6DDAE7FA55F7EEEC7D0 /* Pods_HackDuke.framework */; };
 		8B4C3ACD2172F9D800A5E931 /* Storyboards in Resources */ = {isa = PBXBuildFile; fileRef = 8B4C3ACC2172F9D700A5E931 /* Storyboards */; };
 		D1B3542E2172CEEE003E3130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1B3542D2172CEEE003E3130 /* GoogleService-Info.plist */; };
+		D1B354322172F769003E3130 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B354312172F769003E3130 /* Choice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +34,12 @@
 		4B9CFC362172E1B500C1673C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		4B9CFC3D2172E7A200C1673C /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		4B9CFC3F2172F25200C1673C /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		4B9CFC42217300BE00C1673C /* RegisterDeliver.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterDeliver.storyboard; sourceTree = "<group>"; };
+		4B9CFC44217300EF00C1673C /* RegisterDeliver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDeliver.swift; sourceTree = "<group>"; };
+		4B9CFC4A2173026C00C1673C /* RegisterReceiver.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterReceiver.storyboard; sourceTree = "<group>"; };
+		4B9CFC4C217302AF00C1673C /* RegisterDonator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterDonator.storyboard; sourceTree = "<group>"; };
+		4B9CFC4E2173037A00C1673C /* RegisterReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterReceiver.swift; sourceTree = "<group>"; };
+		4B9CFC502173038A00C1673C /* RegisterDonator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDonator.swift; sourceTree = "<group>"; };
 		4BF4D28D21728E3A00AE4F00 /* HackDuke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackDuke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF4D29021728E3A00AE4F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BF4D29221728E3A00AE4F00 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
@@ -39,6 +52,7 @@
 		8B4C3ACC2172F9D700A5E931 /* Storyboards */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Storyboards; sourceTree = "<group>"; };
 		9EE6C6DDAE7FA55F7EEEC7D0 /* Pods_HackDuke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackDuke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B3542D2172CEEE003E3130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D1B354312172F769003E3130 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 		4B9CFC352172E16B00C1673C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				4B9CFC41217300A900C1673C /* Registration */,
 				4B9CFC3F2172F25200C1673C /* Register.storyboard */,
 				4BF4D29921728E4200AE4F00 /* LaunchScreen.storyboard */,
 				4BF4D29421728E3A00AE4F00 /* Main.storyboard */,
@@ -70,8 +85,23 @@
 			children = (
 				4BF4D29221728E3A00AE4F00 /* LogIn.swift */,
 				4B9CFC3D2172E7A200C1673C /* Register.swift */,
+				4B9CFC44217300EF00C1673C /* RegisterDeliver.swift */,
+				4B9CFC4E2173037A00C1673C /* RegisterReceiver.swift */,
+				4B9CFC502173038A00C1673C /* RegisterDonator.swift */,
+				D1B354312172F769003E3130 /* Choice.swift */,
+
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4B9CFC41217300A900C1673C /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				4B9CFC42217300BE00C1673C /* RegisterDeliver.storyboard */,
+				4B9CFC4A2173026C00C1673C /* RegisterReceiver.storyboard */,
+				4B9CFC4C217302AF00C1673C /* RegisterDonator.storyboard */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		4BF4D28421728E3A00AE4F00 = {
@@ -185,10 +215,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF4D29B21728E4200AE4F00 /* LaunchScreen.storyboard in Resources */,
+				4B9CFC43217300BE00C1673C /* RegisterDeliver.storyboard in Resources */,
 				D1B3542E2172CEEE003E3130 /* GoogleService-Info.plist in Resources */,
 				8B4C3ACD2172F9D800A5E931 /* Storyboards in Resources */,
 				4BF4D29821728E4200AE4F00 /* Assets.xcassets in Resources */,
+				4B9CFC4B2173026C00C1673C /* RegisterReceiver.storyboard in Resources */,
 				4BF4D29621728E3A00AE4F00 /* Main.storyboard in Resources */,
+				4B9CFC4D217302AF00C1673C /* RegisterDonator.storyboard in Resources */,
 				4B9CFC372172E1B500C1673C /* Home.storyboard in Resources */,
 				4B9CFC402172F25200C1673C /* Register.storyboard in Resources */,
 			);
@@ -229,6 +262,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HackDuke/Pods-HackDuke-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -238,6 +272,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -254,10 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B9CFC45217300EF00C1673C /* RegisterDeliver.swift in Sources */,
 				4B9CFC3E2172F15F00C1673C /* Register.swift in Sources */,
+				D1B354322172F769003E3130 /* Choice.swift in Sources */,
 				4B9CFC322172E10400C1673C /* AppStoryboard.swift in Sources */,
+				4B9CFC512173038A00C1673C /* RegisterDonator.swift in Sources */,
 				4BF4D29321728E3A00AE4F00 /* LogIn.swift in Sources */,
 				4BF4D29121728E3A00AE4F00 /* AppDelegate.swift in Sources */,
+				4B9CFC4F2173037A00C1673C /* RegisterReceiver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
