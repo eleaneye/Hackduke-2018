@@ -105,9 +105,9 @@ class Delivery: UIViewController, GMSPlacePickerViewControllerDelegate {
     var recipient: String = ""
     
     @IBAction func submit(_ sender: Any) {
-        var store = storeAddresses[address!]
+        let store = storeAddresses[receivedStoreName!]
         
-        var receipents = ["3039 E Cornwallis Rd, Research Triangle Park, NC 27709",
+        let receipents = ["3039 E Cornwallis Rd, Research Triangle Park, NC 27709",
                           "100 SAS Campus Dr, Cary, NC 27513",
                           "966 High House Rd #124, Cary, NC 27513"
         ]
