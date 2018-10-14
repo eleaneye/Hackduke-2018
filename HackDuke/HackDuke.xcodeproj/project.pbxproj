@@ -18,6 +18,7 @@
 		4BF4D29B21728E4200AE4F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4D29921728E4200AE4F00 /* LaunchScreen.storyboard */; };
 		56D8C765C1904B920C552A75 /* Pods_HackDuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE6C6DDAE7FA55F7EEEC7D0 /* Pods_HackDuke.framework */; };
 		D1B3542E2172CEEE003E3130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1B3542D2172CEEE003E3130 /* GoogleService-Info.plist */; };
+		D1B354322172F769003E3130 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B354312172F769003E3130 /* Choice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		87E145B82303CA7F7EA97B9B /* Pods-HackDuke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackDuke.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackDuke/Pods-HackDuke.release.xcconfig"; sourceTree = "<group>"; };
 		9EE6C6DDAE7FA55F7EEEC7D0 /* Pods_HackDuke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackDuke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B3542D2172CEEE003E3130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D1B354312172F769003E3130 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			children = (
 				4BF4D29221728E3A00AE4F00 /* LogIn.swift */,
 				4B9CFC3D2172E7A200C1673C /* Register.swift */,
+				D1B354312172F769003E3130 /* Choice.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B9CFC3E2172F15F00C1673C /* Register.swift in Sources */,
+				D1B354322172F769003E3130 /* Choice.swift in Sources */,
 				4B9CFC322172E10400C1673C /* AppStoryboard.swift in Sources */,
 				4BF4D29321728E3A00AE4F00 /* LogIn.swift in Sources */,
 				4BF4D29121728E3A00AE4F00 /* AppDelegate.swift in Sources */,
