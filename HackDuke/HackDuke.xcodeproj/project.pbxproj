@@ -130,11 +130,11 @@
 			isa = PBXGroup;
 			children = (
 				4B9CFC552173820800C1673C /* DelivererHome.storyboard */,
-<<<<<<< HEAD
+
 				D1B354352173A99D003E3130 /* ReceiverHome.storyboard */,
-=======
+
 				8B4C3AD02173A0D900A5E931 /* DonatorHome.storyboard */,
->>>>>>> 562a1a567d4ffc080175e0ad83bc967712e4dd7a
+
 			);
 			path = Home;
 			sourceTree = "<group>";
