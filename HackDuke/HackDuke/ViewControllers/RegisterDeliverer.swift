@@ -39,10 +39,7 @@ class RegisterDeliverer: FormViewController, GMSPlacePickerViewControllerDelegat
                 $0.title = "Minutes"
                 $0.placeholder = "Enter Time"
             }
-        
-        +++ SelectableSection<ListCheckRow<String>>("Where do you shop", selectionType: .multipleSelection)
-        
-        
+    
         let stores = ["Whole Foods", "Harris Teeter", "Food Lion", "Panera", "Limings", "Hmart"]
         let distance = ["2.3 miles", "2.4 miles", "2.4 miles", "2.5 miles", "4.4 miles", "22.1 miles"]
         
@@ -54,6 +51,11 @@ class RegisterDeliverer: FormViewController, GMSPlacePickerViewControllerDelegat
             }
         }
         
+        form +++ ButtonRow(){ row in
+            row.title = "Submit"
+            }.onCellSelection({_,_ in
+                self.performSegue(withIdentifier: "toHome", sender: nil)
+            })
         
         
     }
