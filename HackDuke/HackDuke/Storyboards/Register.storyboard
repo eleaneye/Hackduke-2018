@@ -123,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="924" y="-228"/>
         </scene>
-        <!--RegisterDeliver-->
+        <!--RegisterDeliverer-->
         <scene sceneID="u7d-wt-NMq">
             <objects>
-                <viewControllerPlaceholder storyboardName="RegisterDeliver" referencedIdentifier="RegisterDeliver" id="gUi-LQ-jyw" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="RegisterDeliverer" referencedIdentifier="RegisterDeliverer" id="gUi-LQ-jyw" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v4x-Ex-cgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2482" y="-369"/>
@@ -137,7 +137,7 @@
                 <viewControllerPlaceholder storyboardName="RegisterDonator" referencedIdentifier="RegisterDonator" id="8QK-C6-yrr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7b-cm-CTk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2706" y="-252"/>
+            <point key="canvasLocation" x="2677" y="-228"/>
         </scene>
         <!--RegisterReceiver-->
         <scene sceneID="qgb-ed-9Qo">
