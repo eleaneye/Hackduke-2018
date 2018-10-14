@@ -17,6 +17,10 @@
 		4B9CFC4D217302AF00C1673C /* RegisterDonator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9CFC4C217302AF00C1673C /* RegisterDonator.storyboard */; };
 		4B9CFC4F2173037A00C1673C /* RegisterReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CFC4E2173037A00C1673C /* RegisterReceiver.swift */; };
 		4B9CFC512173038A00C1673C /* RegisterDonator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CFC502173038A00C1673C /* RegisterDonator.swift */; };
+		4B9CFC53217381C200C1673C /* DelivererHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CFC52217381C200C1673C /* DelivererHome.swift */; };
+		4B9CFC562173820800C1673C /* DelivererHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9CFC552173820800C1673C /* DelivererHome.storyboard */; };
+		4B9CFC5A2173845D00C1673C /* DelivererHomeTV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CFC592173845D00C1673C /* DelivererHomeTV1.swift */; };
+		4B9CFC5C2173860100C1673C /* DelivererHomePC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CFC5B2173860100C1673C /* DelivererHomePC1.swift */; };
 		4BF4D29121728E3A00AE4F00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4D29021728E3A00AE4F00 /* AppDelegate.swift */; };
 		4BF4D29321728E3A00AE4F00 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4D29221728E3A00AE4F00 /* LogIn.swift */; };
 		4BF4D29621728E3A00AE4F00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4D29421728E3A00AE4F00 /* Main.storyboard */; };
@@ -39,6 +43,10 @@
 		4B9CFC4C217302AF00C1673C /* RegisterDonator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterDonator.storyboard; sourceTree = "<group>"; };
 		4B9CFC4E2173037A00C1673C /* RegisterReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterReceiver.swift; sourceTree = "<group>"; };
 		4B9CFC502173038A00C1673C /* RegisterDonator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDonator.swift; sourceTree = "<group>"; };
+		4B9CFC52217381C200C1673C /* DelivererHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelivererHome.swift; sourceTree = "<group>"; };
+		4B9CFC552173820800C1673C /* DelivererHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DelivererHome.storyboard; sourceTree = "<group>"; };
+		4B9CFC592173845D00C1673C /* DelivererHomeTV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelivererHomeTV1.swift; sourceTree = "<group>"; };
+		4B9CFC5B2173860100C1673C /* DelivererHomePC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelivererHomePC1.swift; sourceTree = "<group>"; };
 		4BF4D28D21728E3A00AE4F00 /* HackDuke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackDuke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF4D29021728E3A00AE4F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BF4D29221728E3A00AE4F00 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
@@ -68,6 +76,7 @@
 		4B9CFC352172E16B00C1673C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				4B9CFC54217381F300C1673C /* Home */,
 				4B9CFC41217300A900C1673C /* Registration */,
 				4B9CFC3F2172F25200C1673C /* Register.storyboard */,
 				4BF4D29921728E4200AE4F00 /* LaunchScreen.storyboard */,
@@ -86,6 +95,9 @@
 				4B9CFC4E2173037A00C1673C /* RegisterReceiver.swift */,
 				4B9CFC502173038A00C1673C /* RegisterDonator.swift */,
 				D1B354312172F769003E3130 /* Choice.swift */,
+				4B9CFC52217381C200C1673C /* DelivererHome.swift */,
+				4B9CFC592173845D00C1673C /* DelivererHomeTV1.swift */,
+				4B9CFC5B2173860100C1673C /* DelivererHomePC1.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -98,6 +110,14 @@
 				4B9CFC4C217302AF00C1673C /* RegisterDonator.storyboard */,
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		4B9CFC54217381F300C1673C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4B9CFC552173820800C1673C /* DelivererHome.storyboard */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		4BF4D28421728E3A00AE4F00 = {
@@ -219,6 +239,7 @@
 				4BF4D29621728E3A00AE4F00 /* Main.storyboard in Resources */,
 				4B9CFC4D217302AF00C1673C /* RegisterDonator.storyboard in Resources */,
 				4B9CFC372172E1B500C1673C /* Home.storyboard in Resources */,
+				4B9CFC562173820800C1673C /* DelivererHome.storyboard in Resources */,
 				4B9CFC402172F25200C1673C /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +327,10 @@
 				4B9CFC45217300EF00C1673C /* RegisterDeliverer.swift in Sources */,
 				4B9CFC3E2172F15F00C1673C /* Register.swift in Sources */,
 				D1B354322172F769003E3130 /* Choice.swift in Sources */,
+				4B9CFC5A2173845D00C1673C /* DelivererHomeTV1.swift in Sources */,
 				4B9CFC322172E10400C1673C /* AppStoryboard.swift in Sources */,
+				4B9CFC53217381C200C1673C /* DelivererHome.swift in Sources */,
+				4B9CFC5C2173860100C1673C /* DelivererHomePC1.swift in Sources */,
 				4B9CFC512173038A00C1673C /* RegisterDonator.swift in Sources */,
 				4BF4D29321728E3A00AE4F00 /* LogIn.swift in Sources */,
 				4BF4D29121728E3A00AE4F00 /* AppDelegate.swift in Sources */,
