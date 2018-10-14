@@ -24,12 +24,12 @@ class Delivery: UIViewController, GMSPlacePickerViewControllerDelegate {
     
     var homeAddress = "102 Wannamaker Drive Durham,NC"
     
-    var storeAddresses = ["Whole Foods":"",
-                          "Harris Teeter":"",
-                          "Food Lion":"",
-                          "Panera":"",
-                          "Limings":"",
-                          "Hmart":""
+    var storeAddresses = ["Whole Foods": "",
+                          "Harris Teeter": "",
+                          "Food Lion": "",
+                          "Panera": "",
+                          "Limings": "",
+                          "Hmart": ""
     ]
     
     var address:String?
@@ -105,7 +105,7 @@ class Delivery: UIViewController, GMSPlacePickerViewControllerDelegate {
     var recipient: String = ""
     
     @IBAction func submit(_ sender: Any) {
-        var store = storeAddresses[address]
+        var store = storeAddresses[address!]
         
         var receipents = ["3039 E Cornwallis Rd, Research Triangle Park, NC 27709",
                           "100 SAS Campus Dr, Cary, NC 27513",
