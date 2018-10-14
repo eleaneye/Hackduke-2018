@@ -112,7 +112,12 @@ class Delivery: UIViewController, GMSPlacePickerViewControllerDelegate {
 //        let store = "3039 E Cornwallis Rd, Research Triangle Park, NC 27709"
         let receipents = ["3039 E Cornwallis Rd, Research Triangle Park, NC 27709",
                           "100 SAS Campus Dr, Cary, NC 27513",
-                          "966 High House Rd #124, Cary, NC 27513"
+                          "966 High House Rd #124, Cary, NC 27513",
+                          "401 Chapel Dr, Durham, NC 27708",
+                          "2400 John Brantley Blvd, Morrisville, NC 27560",
+                          "601 W Main St #103, Durham, NC 27701",
+                          "1058 W Club Blvd, Durham, NC 27701",
+                          "2505 Durham-Chapel Hill Blvd, Durham, NC 27707"
         ]
         
         let myGroup = DispatchGroup()
