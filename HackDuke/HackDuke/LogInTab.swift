@@ -14,7 +14,7 @@ import FirebaseCore
 import FirebaseDatabase
 
 
-class ViewController: UIViewController {
+class LoginTab: UIViewController {
     
     var ref: DatabaseReference!
 
